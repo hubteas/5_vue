@@ -39,7 +39,7 @@
           },
         },
         methods: {
-          fetchContacts: _.debounce(function () { 
+          fetchContacts: _.debounce(function () {
             this.isLoading = true;
 
             axios.get(BASEURL + `/contacts_long/search/${this.name}`).then((response) => {
